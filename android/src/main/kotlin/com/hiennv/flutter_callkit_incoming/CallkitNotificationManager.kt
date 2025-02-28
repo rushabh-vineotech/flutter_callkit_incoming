@@ -133,7 +133,7 @@ class CallkitNotificationManager(private val context: Context) {
             smallIcon = R.drawable.ic_video
         } else {
             if (smallIcon >= 0) {
-                smallIcon = R.drawable.ic_accept
+                smallIcon = R.drawable.ic_check
             }
         }
         notificationBuilder.setSmallIcon(smallIcon)
@@ -206,14 +206,14 @@ class CallkitNotificationManager(private val context: Context) {
                 notificationBuilder.setContentTitle(caller)
                 val textDecline = data.getString(CallkitConstants.EXTRA_CALLKIT_TEXT_DECLINE, "")
                 val declineAction: NotificationCompat.Action = NotificationCompat.Action.Builder(
-                    R.drawable.ic_decline,
+                    R.drawable.ic_close,
                     if (TextUtils.isEmpty(textDecline)) context.getString(R.string.text_decline) else textDecline,
                     getDeclinePendingIntent(notificationId, data)
                 ).build()
                 notificationBuilder.addAction(declineAction)
                 val textAccept = data.getString(CallkitConstants.EXTRA_CALLKIT_TEXT_ACCEPT, "")
                 val acceptAction: NotificationCompat.Action = NotificationCompat.Action.Builder(
-                    R.drawable.ic_accept,
+                    R.drawable.ic_check,
                     if (TextUtils.isEmpty(textDecline)) context.getString(R.string.text_accept) else textAccept,
                     getAcceptPendingIntent(notificationId, data)
                 ).build()
@@ -381,7 +381,7 @@ class CallkitNotificationManager(private val context: Context) {
                 val textCallback =
                     data.getString(CallkitConstants.EXTRA_CALLKIT_MISSED_CALL_CALLBACK_TEXT, "")
                 val callbackAction: NotificationCompat.Action = NotificationCompat.Action.Builder(
-                    R.drawable.ic_accept,
+                    R.drawable.ic_check,
                     if (TextUtils.isEmpty(textCallback)) context.getString(R.string.text_call_back) else textCallback,
                     getCallbackPendingIntent(notificationId, data)
                 ).build()
