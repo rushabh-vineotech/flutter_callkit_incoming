@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/base_margin_half"
                     android:layout_marginRight="@dimen/base_margin_half"
-                    android:src="@drawable/ic_decline"
+                    android:src="@drawable/ic_close"
                     android:tint="@android:color/white"
                     app:tint="@android:color/white"
                     tools:ignore="UseAppTint" />
@@ -115,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/base_margin_half"
                     android:layout_marginRight="@dimen/base_margin_half"
-                    android:src="@drawable/ic_accept"
+                    android:src="@drawable/ic_check"
                     android:tint="@android:color/white"
                     app:tint="@android:color/white"
                     tools:ignore="UseAppTint" />
