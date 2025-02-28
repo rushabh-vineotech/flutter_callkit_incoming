@@ -13,6 +13,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -28,6 +29,8 @@
                 android:id="@+id/tvNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:textAppearance="@style/TextAppearance.Compat.Notification.Line2"
                 android:textSize="@dimen/size_text_action" />
 
@@ -36,8 +39,8 @@
 
         <ImageView
             android:id="@+id/ivAvatar"
-            android:layout_width="@dimen/base_margin_x4_8"
-            android:layout_height="@dimen/base_margin_x4_8"
+            android:layout_width="@dimen/base_margin_x6"
+            android:layout_height="@dimen/base_margin_x6"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_default_avatar"
             android:visibility="invisible" />
@@ -53,8 +56,9 @@
         <LinearLayout
             android:id="@+id/llDecline"
             android:layout_width="0dp"
-            android:layout_height="@dimen/base_margin_x4_8"
+            android:layout_height="@dimen/base_margin_x4"
             android:layout_weight="1"
+            android:layout_marginLeft="@dimen/base_margin_half"
             android:background="@drawable/rounded_button_decline"
             android:clickable="true"
             android:focusable="true"
@@ -94,11 +98,12 @@
         <LinearLayout
             android:id="@+id/llAccept"
             android:layout_width="0dp"
-            android:layout_height="@dimen/base_margin_x4_8"
+            android:layout_height="@dimen/base_margin_x4"
             android:layout_weight="1"
             android:background="@drawable/rounded_button_accept"
             android:clickable="true"
             android:focusable="true"
+            android:layout_marginRight="@dimen/base_margin_half"
             android:gravity="center"
             android:orientation="horizontal">
 

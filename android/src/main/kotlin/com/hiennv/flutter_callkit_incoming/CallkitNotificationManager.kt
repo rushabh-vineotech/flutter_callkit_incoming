@@ -133,7 +133,7 @@ class CallkitNotificationManager(private val context: Context) {
             smallIcon = R.drawable.ic_video
         } else {
             if (smallIcon >= 0) {
-                smallIcon = R.drawable.ic_check
+                smallIcon = R.drawable.ic_default_avatar
             }
         }
         notificationBuilder.setSmallIcon(smallIcon)
